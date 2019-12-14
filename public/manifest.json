@@ -1,0 +1,15 @@
+{
+  "name": "健身打卡",
+  "short_name": "gym",
+  "icons": [
+    {
+      "src": "./img/icons/favicon-32x32.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#4DBA87"
+}
