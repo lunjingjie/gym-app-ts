@@ -1,6 +1,6 @@
 module.exports = {
   "lintOnSave": false,
-  "pwa": {
+  /*"pwa": {
     "name": "CSDN",
     "themeColor": "#4DBA87",
     "msTileColor": "#000000",
@@ -16,7 +16,7 @@ module.exports = {
         {}
       ]
     }
-  },
+  },*/
   "transpileDependencies": [
     "vuetify"
   ]
