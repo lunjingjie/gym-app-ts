@@ -67,6 +67,7 @@
 
     changeMode() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+      this.darkFlag = this.$vuetify.theme.dark;
     }
   }
 </script>
