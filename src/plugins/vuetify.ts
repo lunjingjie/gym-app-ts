@@ -10,6 +10,7 @@ export default new Vuetify({
       light: {
         top_bar: '#fff',
         content_bg: '#000',
+        bottom_bar_select: '#1976D2',
         primary: '#1976D2',
         secondary: '#424242',
         accent: '#82B1FF',
@@ -21,6 +22,7 @@ export default new Vuetify({
       dark: {
         top_bar: '#282828',
         content_bg: '#212121',
+        bottom_bar_select: '#fff',
         primary: '#1976D2',
         secondary: '#424242',
         accent: '#82B1FF',

@@ -1,7 +1,6 @@
 <template>
   <div>
     <v-app-bar
-        :src="darkFlag ? 'https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg' : ''"
         app
         color="top_bar"
         flat
@@ -15,7 +14,7 @@
             transition="scale-transition"
             width="32"
         />
-        <h2>GYM</h2>
+        <h2 style="font-size: 17px;">GYM</h2>
       </div>
       <v-spacer></v-spacer>
       <v-btn
@@ -38,21 +37,22 @@
         fixed
         :value="activeBtn"
         grow
-        color="teal"
+        color="bottom_bar_select"
+        height="75"
     >
-      <v-btn>
-        <span>Recents</span>
-        <v-icon>mdi-history</v-icon>
+      <v-btn icon style="height: 50px;">
+        <span>打卡</span>
+        <v-icon style="font-size: 20px;">mdi-history</v-icon>
       </v-btn>
 
-      <v-btn>
-        <span>Favorites</span>
-        <v-icon>mdi-heart</v-icon>
+      <v-btn icon style="height: 50px;">
+        <span>轨迹</span>
+        <v-icon style="font-size: 20px;">mdi-heart</v-icon>
       </v-btn>
 
-      <v-btn>
+      <v-btn icon style="height: 50px;">
         <span>Nearby</span>
-        <v-icon>mdi-map-marker</v-icon>
+        <v-icon style="font-size: 20px;">mdi-map-marker</v-icon>
       </v-btn>
     </v-bottom-navigation>
   </div>
