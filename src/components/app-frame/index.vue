@@ -4,6 +4,7 @@
         app
         color="top_bar"
         flat
+        class="elevation-1"
     >
       <div class="d-flex align-center">
         <v-img
@@ -14,7 +15,7 @@
             transition="scale-transition"
             width="32"
         />
-        <h2 style="font-size: 17px;">GYM</h2>
+        <h2 style="font-size: 17px;">GYMLIFE</h2>
       </div>
       <v-spacer></v-spacer>
       <v-btn
@@ -31,30 +32,68 @@
         <v-icon>mdi-account-circle</v-icon>
       </v-btn>
     </v-app-bar>
-    <v-content>
-    </v-content>
-    <v-bottom-navigation
-        fixed
-        :value="activeBtn"
-        grow
-        color="bottom_bar_select"
+    <router-view style="padding-top: 70px;" class="mx-3" :style="{height: height - 98 + 'px'}"/>
+    <v-card
         height="75"
+        class="elevation-2"
+        style="position: fixed; bottom: 0px; width: 100%;"
     >
-      <v-btn icon style="height: 50px;">
-        <span>打卡</span>
-        <v-icon style="font-size: 20px;">mdi-history</v-icon>
-      </v-btn>
+      <v-layout row class="px-3">
+        <v-flex class="text-center">
+          <div>
+            <v-btn @click="bottomBarBtnIndex = 'checkIn'"
+                   icon style="font-weight: bold; margin-top: -4px;"
+                   width="60"
+                   height="60"
+                   :color="bottomBarBtnIndex === 'checkIn' ? 'bottom_bar_select' : 'bottom_bar_bg'"
+            >
+              <div>
+                <div>
+                  <v-icon style="font-size: 20px;">mdi-calendar-check-outline</v-icon>
+                </div>
+                <div style="font-size: 12px;">打卡</div>
+              </div>
+            </v-btn>
+          </div>
+        </v-flex>
 
-      <v-btn icon style="height: 50px;">
-        <span>轨迹</span>
-        <v-icon style="font-size: 20px;">mdi-heart</v-icon>
-      </v-btn>
+        <v-flex class="text-center">
+          <div>
+            <v-btn @click="bottomBarBtnIndex = 'chart'"
+                   icon style="font-weight: bold; margin-top: -4px;"
+                   width="60"
+                   height="60"
+                   :color="bottomBarBtnIndex === 'chart' ? 'bottom_bar_select' : 'bottom_bar_bg'"
+            >
+              <div>
+                <div>
+                  <v-icon style="font-size: 20px;">mdi-chart-bar</v-icon>
+                </div>
+                <div style="font-size: 12px;">统计</div>
+              </div>
+            </v-btn>
+          </div>
+        </v-flex>
 
-      <v-btn icon style="height: 50px;">
-        <span>Nearby</span>
-        <v-icon style="font-size: 20px;">mdi-map-marker</v-icon>
-      </v-btn>
-    </v-bottom-navigation>
+        <v-flex class="text-center">
+          <div>
+            <v-btn @click="bottomBarBtnIndex = 'book'"
+                   icon style="font-weight: bold; margin-top: -4px;"
+                   width="60"
+                   height="60"
+                   :color="bottomBarBtnIndex === 'book' ? 'bottom_bar_select' : 'bottom_bar_bg'"
+            >
+              <div>
+                <div>
+                  <v-icon style="font-size: 20px;">mdi-book-open-page-variant</v-icon>
+                </div>
+                <div style="font-size: 12px;">教程</div>
+              </div>
+            </v-btn>
+          </div>
+        </v-flex>
+      </v-layout>
+    </v-card>
   </div>
 </template>
 <script lang="ts">
@@ -62,8 +101,14 @@
 
   @Component
   export default class AppFrame extends Vue {
-    private activeBtn: number = 1;
     private darkFlag: boolean = this.$vuetify.theme.dark;
+    private bottomBarBtnIndex: string = 'checkIn';
+    private height: number = 0;
+
+    mounted() {
+      this.height = document.body.clientHeight;
+      this.$router.push('/gymCheckIn');
+    }
 
     changeMode() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
