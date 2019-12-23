@@ -19,7 +19,7 @@
           </v-row>
         </v-col>
       </v-row>
-    </v-card>di
+    </v-card>
   </div>
 </template>
 <script lang="ts">

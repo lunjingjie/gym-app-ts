@@ -32,7 +32,7 @@
         <v-icon>mdi-account-circle</v-icon>
       </v-btn>
     </v-app-bar>
-    <router-view style="padding-top: 70px;" class="mx-3" :style="{height: height - 98 + 'px'}"/>
+    <router-view style="padding-top: 60px;" class="mx-3" :style="{height: height - 98 + 'px'}" />
     <v-card
         height="75"
         class="elevation-2"
