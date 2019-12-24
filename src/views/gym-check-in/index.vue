@@ -36,13 +36,13 @@
 
     mounted() {
       this.height = document.body.clientHeight;
-      this.currentTime = dayjs().format('HH:MM');
+      this.currentTime = dayjs().format('HH:mm');
       this.setTimeInterval();
     }
 
     setTimeInterval() {
       this.timeInterval = setInterval(() => {
-        this.currentTime = dayjs().format('HH:MM');
+        this.currentTime = dayjs().format('HH:mm');
       }, 1000);
     }
 
