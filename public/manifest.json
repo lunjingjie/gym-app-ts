@@ -1,9 +1,9 @@
 {
-  "name": "健身打卡",
-  "short_name": "健身打卡",
+  "name": "健身打卡1",
+  "short_name": "健身打卡2",
   "icons": [
     {
-      "src": "./img/icons/msapplication-icon-144x144.png",
+      "src": "./img/icons/apple-touch-icon-60x60.png",
       "sizes": "144x144",
       "type": "image/png"
     }
