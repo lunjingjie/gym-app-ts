@@ -3,7 +3,7 @@
   "short_name": "健身打卡12",
   "icons": [
     {
-      "src": "./img/icons/msapplication-icon-144x144.png",
+      "src": "./img/icons/msapplication-icon/144x144.png",
       "sizes": "144x144",
       "type": "image/png"
     }
