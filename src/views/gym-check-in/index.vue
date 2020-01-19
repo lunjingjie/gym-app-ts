@@ -24,6 +24,7 @@
 </template>
 <script lang="ts">
   import {Component, Vue} from "vue-property-decorator";
+  import testApi from '@/api/test';
   import dayjs from 'dayjs';
 
   @Component
@@ -37,6 +38,7 @@
     mounted() {
       this.height = document.body.clientHeight;
       this.currentTime = dayjs().format('HH:mm');
+      this.testAxios();
       this.setTimeInterval();
     }
 
@@ -44,6 +46,11 @@
       this.timeInterval = setInterval(() => {
         this.currentTime = dayjs().format('HH:mm');
       }, 1000);
+    }
+
+    async testAxios() {
+      const { data } = await testApi.test();
+      console.log(data);
     }
 
     destroyed() {
