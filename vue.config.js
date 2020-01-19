@@ -4,7 +4,7 @@ module.exports = {
   "transpileDependencies": [
     "vuetify"
   ],
-  /*devServer: {
+  devServer: {
     port: 7003,
     open: true,
     // 代理配置
@@ -21,6 +21,6 @@ module.exports = {
         },
       },
     },
-  },*/
+  },
 };
 
