@@ -51,7 +51,7 @@
                 <div>
                   <v-icon style="font-size: 20px;">mdi-calendar-check-outline</v-icon>
                 </div>
-                <div style="font-size: 12px;">打卡2</div>
+                <div style="font-size: 12px;">打卡</div>
               </div>
             </v-btn>
           </div>
