@@ -1,9 +1,6 @@
 .DS_Store
 node_modules
 /dist
-.idea
-api.rest
-README.md
 
 # local env files
 .env.local
@@ -21,5 +18,5 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
-package-lock.json
+*.sw*
+.idea\

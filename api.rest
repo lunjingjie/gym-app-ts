@@ -1,0 +1,5 @@
+###
+GET http://192.168.1.198:15100/wdp/riverBase/getAllRiverMiscellaneous
+authorization: eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE1NjA5MjM2OTEsInN1YiI6ImQ1MjUyN2M2YWYzMzRlZGVhYThhYTUxZDVlMWRiNzczLHVzZXIscml2ZXJfYWRtaW4iLCJyb2xlcyI6IltcInVzZXJcIixcInJpdmVyX2FkbWluXCJdIiwidXNlcklkIjoiZDUyNTI3YzZhZjMzNGVkZWFhOGFhNTFkNWUxZGI3NzMifQ.V-XYXSPZNUUM6FaaNB_jRjFXopYUrY-LRD3KgnlINIYHL-Ia8lVQV3xsmIGO1yCYfZ-d3TVGwq4aUiyazwsk-A
+
+###
